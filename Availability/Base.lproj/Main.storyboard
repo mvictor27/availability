@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Availability View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AvailabilityViewController" customModule="Availability" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o6d-2t-RIK">
+                                <rect key="frame" x="0.0" y="183" width="375" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="BkT-vC-LXK"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XY-QA-oQL">
+                                <rect key="frame" x="46" y="629" width="283" height="30"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9Tp-JM-g25"/>
+                                </constraints>
+                                <state key="normal" title="next"/>
+                                <connections>
+                                    <action selector="nextAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NzR-Cp-vZA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="o6d-2t-RIK" secondAttribute="trailing" id="276-68-9bm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0XY-QA-oQL" secondAttribute="bottom" constant="8" id="45M-dR-W9Z"/>
+                            <constraint firstItem="o6d-2t-RIK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5gS-Wf-xUa"/>
+                            <constraint firstItem="o6d-2t-RIK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CTb-y4-gqh"/>
+                            <constraint firstItem="0XY-QA-oQL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="DSE-zC-e9W"/>
+                            <constraint firstItem="o6d-2t-RIK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dl6-NT-xAH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0XY-QA-oQL" secondAttribute="trailing" constant="30" id="GtH-cY-wVx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionContainerView" destination="o6d-2t-RIK" id="kEV-YZ-1eA"/>
+                        <outlet property="nextButton" destination="0XY-QA-oQL" id="cG3-aw-LhV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
