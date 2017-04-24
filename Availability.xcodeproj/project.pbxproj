@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92AFCA31EA0C17200372B3A /* AvailabilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92AFCA21EA0C17200372B3A /* AvailabilityTests.swift */; };
 		A948B9031E9F6C8A00CF9725 /* OneLabelCenteredCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A948B9011E9F6C8A00CF9725 /* OneLabelCenteredCollectionViewCell.swift */; };
 		A948B9041E9F6C8A00CF9725 /* OneLabelCenteredCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A948B9021E9F6C8A00CF9725 /* OneLabelCenteredCollectionViewCell.xib */; };
 		A948B9061E9F6CEE00CF9725 /* AvailabilityViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A948B9051E9F6CEE00CF9725 /* AvailabilityViewModel.swift */; };
@@ -21,7 +22,20 @@
 		A9D597C61E9F5E3A006E5B22 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D597C51E9F5E3A006E5B22 /* BaseCollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A92AFCA51EA0C17200372B3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9D597A61E9F5B90006E5B22 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9D597AD1E9F5B90006E5B22;
+			remoteInfo = Availability;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A92AFCA01EA0C17200372B3A /* AvailabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvailabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A92AFCA21EA0C17200372B3A /* AvailabilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailabilityTests.swift; sourceTree = "<group>"; };
+		A92AFCA41EA0C17200372B3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A948B9011E9F6C8A00CF9725 /* OneLabelCenteredCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneLabelCenteredCollectionViewCell.swift; sourceTree = "<group>"; };
 		A948B9021E9F6C8A00CF9725 /* OneLabelCenteredCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneLabelCenteredCollectionViewCell.xib; sourceTree = "<group>"; };
 		A948B9051E9F6CEE00CF9725 /* AvailabilityViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvailabilityViewModel.swift; sourceTree = "<group>"; };
@@ -39,6 +53,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A92AFC9D1EA0C17200372B3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9D597AB1E9F5B90006E5B22 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -49,6 +70,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A92AFCA11EA0C17200372B3A /* AvailabilityTests */ = {
+			isa = PBXGroup;
+			children = (
+				A92AFCA21EA0C17200372B3A /* AvailabilityTests.swift */,
+				A92AFCA41EA0C17200372B3A /* Info.plist */,
+			);
+			path = AvailabilityTests;
+			sourceTree = "<group>";
+		};
 		A948B9091E9F7A1000CF9725 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				A9D597B01E9F5B90006E5B22 /* Availability */,
+				A92AFCA11EA0C17200372B3A /* AvailabilityTests */,
 				A9D597AF1E9F5B90006E5B22 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -159,6 +190,7 @@
 			isa = PBXGroup;
 			children = (
 				A9D597AE1E9F5B90006E5B22 /* Availability.app */,
+				A92AFCA01EA0C17200372B3A /* AvailabilityTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,6 +208,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A92AFC9F1EA0C17200372B3A /* AvailabilityTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A92AFCA91EA0C17200372B3A /* Build configuration list for PBXNativeTarget "AvailabilityTests" */;
+			buildPhases = (
+				A92AFC9C1EA0C17200372B3A /* Sources */,
+				A92AFC9D1EA0C17200372B3A /* Frameworks */,
+				A92AFC9E1EA0C17200372B3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A92AFCA61EA0C17200372B3A /* PBXTargetDependency */,
+			);
+			name = AvailabilityTests;
+			productName = AvailabilityTests;
+			productReference = A92AFCA01EA0C17200372B3A /* AvailabilityTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A9D597AD1E9F5B90006E5B22 /* Availability */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9D597C01E9F5B90006E5B22 /* Build configuration list for PBXNativeTarget "Availability" */;
@@ -203,6 +253,12 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Qubiz;
 				TargetAttributes = {
+					A92AFC9F1EA0C17200372B3A = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = SQC7LH7BXF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A9D597AD1E9F5B90006E5B22;
+					};
 					A9D597AD1E9F5B90006E5B22 = {
 						CreatedOnToolsVersion = 8.3.1;
 						LastSwiftMigration = 0830;
@@ -224,11 +280,19 @@
 			projectRoot = "";
 			targets = (
 				A9D597AD1E9F5B90006E5B22 /* Availability */,
+				A92AFC9F1EA0C17200372B3A /* AvailabilityTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A92AFC9E1EA0C17200372B3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9D597AC1E9F5B90006E5B22 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -243,6 +307,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A92AFC9C1EA0C17200372B3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A92AFCA31EA0C17200372B3A /* AvailabilityTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9D597AA1E9F5B90006E5B22 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -259,6 +331,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A92AFCA61EA0C17200372B3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9D597AD1E9F5B90006E5B22 /* Availability */;
+			targetProxy = A92AFCA51EA0C17200372B3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A9D597B51E9F5B90006E5B22 /* Main.storyboard */ = {
@@ -280,6 +360,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A92AFCA71EA0C17200372B3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SQC7LH7BXF;
+				INFOPLIST_FILE = AvailabilityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qubizservices.AvailabilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Availability.app/Availability";
+			};
+			name = Debug;
+		};
+		A92AFCA81EA0C17200372B3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = SQC7LH7BXF;
+				INFOPLIST_FILE = AvailabilityTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qubizservices.AvailabilityTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Availability.app/Availability";
+			};
+			name = Release;
+		};
 		A9D597BE1E9F5B90006E5B22 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,6 +514,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A92AFCA91EA0C17200372B3A /* Build configuration list for PBXNativeTarget "AvailabilityTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A92AFCA71EA0C17200372B3A /* Debug */,
+				A92AFCA81EA0C17200372B3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A9D597A91E9F5B90006E5B22 /* Build configuration list for PBXProject "Availability" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
