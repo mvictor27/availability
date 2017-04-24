@@ -7,4 +7,3 @@ cache:
 xcode_project: Availability.xcodeproj 
 xcode_scheme: Availability 
 xcode_sdk: iphonesimulator10.3 
-os: iOS
